@@ -1,1 +1,168 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/fd53d8f41f.js" crossorigin="anonymous"></script>
+    <title>Am I A Coder Yet? | Aliyah Regina</title>
+
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            width: 100vw;
+        }
+
+        header{
+            display: flex;
+            flex-direction: column; 
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .profile_pic img{
+            border-radius: 100%;
+        }
+
+        .link-container{
+            display: grid;
+            justify-items: center;
+            gap: 1rem;
+      
+        }
+
+        .link{
+            row-gap: 1rem;
+            height: 250px;
+            border-radius: 1rem;
+        }
+
+        .link-secondary .link{
+
+            height: 250px;
+            border-radius: 1rem;
+
+        }
+
+        .link-container .youtube{
+            background-image: url(https://loremflickr.com/640/360);
+        }
+
+        .link-container .amazon{
+            background-image: url(https://loremflickr.com/640/360);
+        }
+
+        .link-container .hashnode{
+            background-image: url(https://loremflickr.com/640/360);
+        }
+
+        .link-container .github{
+            background-image: url(https://loremflickr.com/640/360);
+        }
+
+        .link-container .instagram{
+            background-image: url(https://loremflickr.com/640/360);
+        }
+
+        .link-main{
+            width: 35vw;   
+        }
+
+        .link-secondary{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 1rem 1rem;
+            width: 35vw;
+        }
+
+        .link-container .caption{
+            display: grid;
+            grid-template-columns: 3fr 1fr;
+            width: 100%;
+            align-items: center;
+            
+        }
+
+        .link-container .caption i{
+            align-items: end;
+        }
+
+
+
+
+    
+
+    </style>
+
+
+</head>
+<body>
+    <header>
+
+        <div class="profile_pic">
+            <img src="https://i.pravatar.cc/100" alt="">
+        </div>
+
+        <h2>Aliyah Regina</h2>
+        
+        <p>Romanticizing programming and helping self taught developers</p>
+        <div class="social-links">
+            <i class="fa-brands fa-amazon"></i>
+            <i class="fa-brands fa-github"></i>
+            <i class="fa-brands fa-hashnode"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-youtube"></i>
+            <i class="fa-regular fa-envelope"></i>
+        </div>
+
+    </header>
+
+    <main>
+       
+
+        <div class="link-container">
+            <div class="link-main">
+                <div class="link youtube">
+                    <div class="caption">
+                        <p>Watch My Newest Video!</p>
+                        <i class="fa-brands fa-youtube"></i>
+                    </div>
+                </div>
+                <div class="link amazon">
+                    <div class="caption">
+                        <p>Shop My Amazon Storefront</p>
+                        <i class="fa-brands fa-amazon"></i>
+                    </div>            
+                </div>
+            </div>
+           
+            <div class="link-secondary">
+                <div class="link hashnode">
+                    <div class="caption">
+                        <p>Read My Blog</p>
+                        <i class="fa-duotone fa-browser"></i>
+                    </div>
+                </div>
+                <div class="link github">  
+                    <div class="caption">
+                        <p>Explore My Github</p>
+                        <i class="fa-brands fa-github-alt"></i>
+                    </div>
+                </div>
+                <div class="link instagram">
+                    <div class="caption">
+                        <p>Join the Community!</p>
+                        <i class="fa-brands fa-instagram"></i>
+                    </div>
+                </div>    
+            </div>
+            
+
+
+        </div>
+
+    </main>
+</body>
+</html>
