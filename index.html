@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Fanwood+Text|Shrikhand" rel="stylesheet">
     <script src="https://kit.fontawesome.com/fd53d8f41f.js" crossorigin="anonymous"></script>
     <title>Am I A Coder Yet? | Aliyah Regina</title>
 
@@ -12,7 +13,7 @@
             margin: 0;
             padding: 0;
             width: 100vw;
-            background: aquamarine;
+            background: #f0f0f0;
       
         }
         #container{
@@ -24,6 +25,9 @@
             margin-top: 4rem;
             margin-bottom: 4rem;
             border-radius: 2rem;
+            padding-bottom: 4rem;
+            box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+
         }
 
         header{
@@ -35,13 +39,29 @@
 
         }
 
-        h2{
-            margin: 1rem;
+        header h2{
+            font-size: 36px;
+        }
 
+        h2{
+            margin: 0rem;
+            Font-Family: 'Shrikhand', Serif;
+            Font-Size: 24px;
+            letter-spacing: .1rem;
+            text-align: center;
+
+        }
+
+        p{
+            Font-Family: 'Fanwood Text', Serif;
+            Font-Size: 16px;
         }
 
         header p {
             margin: 0;
+
+            width: 20vw;
+            text-align: center;
         }
 
         .profile_pic img{
@@ -52,10 +72,19 @@
             margin: 2rem;
         }
 
+        .social-links a i{
+            background-color: black;
+            padding: .5rem;
+            border-radius: 100%;
+            text-decoration: none;
+            color: white;
+        }
+
         .link-container{
             display: grid;
             justify-items: center;
             gap: 1rem;
+            
       
         }
 
@@ -64,7 +93,6 @@
             height: 250px;
             border-radius: 1rem;
             display: grid;
-            justify-content: end;
         }
 
         .link-secondary .link{
@@ -75,11 +103,13 @@
         }
 
         .link-container .youtube{
-            background-image: url(https://loremflickr.com/640/360);
+            background-image: url(thumb.png);
+            background-size: cover;
         }
 
         .link-container .amazon{
-            background-image: url(https://loremflickr.com/640/360);
+            background-image: url(me.JPG);
+            background-size: contain;
         }
 
         .link-container .hashnode{
@@ -115,13 +145,31 @@
         .link-container .caption{
             display: grid;
             grid-template-columns: 3fr 1fr;
-            width: 100%;
-            align-items: center;
+            align-items: baseline;
+            justify-content: space-between;
+            margin: 2rem; 
             
         }
 
-        .link-container .caption i{
-            align-items: end;
+        .link-container .caption a {
+            display: grid;
+            justify-content: end;
+            text-decoration: none;
+            color: white;
+        }
+
+        .caption{
+            display: grid;
+        }
+
+        .caption p{
+            color: white;
+        }
+
+        .profile_pic img{
+            background-size: contain;
+            width: 7rem;
+            height: 7rem;
         }
     </style>
 
@@ -134,43 +182,41 @@
     <header>
 
         <div class="profile_pic">
-            <img src="https://i.pravatar.cc/100" alt="">
+            <img src="me.JPG" alt="">
         </div>
 
-        <h2>Aliyah Regina</h2>
+        <h2>Am I A Coder Yet?</h2>
         
-        <p>Romanticizing programming and helping self taught developers</p>
+        <p>✨ Romanticizing programming and helping self taught developers</p>
         <div class="social-links">
             
                 <a href="#"><i class="fa-brands fa-amazon fa-2x"></i></a>
-                <a href="#"><i class="fa-brands fa-github fa-2x"></i></a>
-                <a href="#"><i class="fa-brands fa-hashnode fa-2x"></i></a>
-                <a href="#"><i class="fa-brands fa-instagram fa-2x"></i></a>
-                <a href="#"><i class="fa-brands fa-youtube fa-2x"></i></a>
+                <a href="https://github.com/aiacy"><i class="fa-brands fa-github fa-2x"></i></a>
+                <a href="https://aiacy.hashnode.dev/"><i class="fa-brands fa-hashnode fa-2x"></i></a>
+                <a href="https://www.instagram.com/amiacoderyet/"><i class="fa-brands fa-instagram fa-2x"></i></a>
+                <a href="https://www.youtube.com/channel/UCNo8T__83Ze_Uxjk-epTzUA"><i class="fa-brands fa-youtube fa-2x"></i></a>
                 <a href="#"><i class="fa-regular fa-envelope fa-2x"></i></a>
-
+        
         </div>
 
     </header>
 
     <main>
-       
-
         <div class="link-container">
             <div class="link-main">
                 <div class="link youtube">
                     <div class="caption">
                         <p>Watch My Newest Video!</p>
-                        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="#"><i class="fa-brands fa-youtube fa-2x"></i></a>
                     </div>
                 </div>
                 <div class="link amazon">
                     <div class="caption">
                         <p>Shop My Amazon Storefront</p>
-                        <a href="#"></a><i class="fa-brands fa-amazon"></i></a>
+                        <a href="#"><i class="fa-brands fa-amazon fa-2x"></i></a>
                     </div>            
                 </div>
-              
+                    <h2>🎧 My Favourite Tunes to Code to</h2>
                     <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/3ebHKSjHujS4Tyt2KKP97R?utm_source=generator"  width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
           
             </div>
@@ -185,7 +231,7 @@
                 <div class="link github">  
                     <div class="caption">
                         <p>Explore My Github</p>
-                        <a href="#"></a><i class="fa-brands fa-github-alt"></i></a>
+                        <a href="#"><i class="fa-brands fa-github-alt"></i></a>
                     </div>
                 </div>
                 <div class="link instagram">
@@ -196,7 +242,7 @@
                 </div>    
             </div>
             
-
+            <p>- Made with 💖 by Aliyah Regina. Feel free to use the <a href="#">code</a></p>
 
         </div>
 
