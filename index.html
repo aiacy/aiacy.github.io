@@ -12,6 +12,18 @@
             margin: 0;
             padding: 0;
             width: 100vw;
+            background: aquamarine;
+      
+        }
+        #container{
+            background: white;
+            width: 50vw;
+            display: grid;
+            align-items: center;
+            margin: auto;
+            margin-top: 4rem;
+            margin-bottom: 4rem;
+            border-radius: 2rem;
         }
 
         header{
@@ -19,11 +31,25 @@
             flex-direction: column; 
             justify-content: center;
             align-items: center;
+            margin-top: 3rem;
 
+        }
+
+        h2{
+            margin: 1rem;
+
+        }
+
+        header p {
+            margin: 0;
         }
 
         .profile_pic img{
             border-radius: 100%;
+        }
+
+        .social-links{
+            margin: 2rem;
         }
 
         .link-container{
@@ -37,6 +63,8 @@
             row-gap: 1rem;
             height: 250px;
             border-radius: 1rem;
+            display: grid;
+            justify-content: end;
         }
 
         .link-secondary .link{
@@ -66,8 +94,15 @@
             background-image: url(https://loremflickr.com/640/360);
         }
 
+        .link .spotify{
+            width: 380px;
+        }
+
         .link-main{
-            width: 35vw;   
+            width: 70%;
+            row-gap: 1rem;
+            display: grid;
+            column-gap: 1rem;
         }
 
         .link-secondary{
@@ -88,17 +123,14 @@
         .link-container .caption i{
             align-items: end;
         }
-
-
-
-
-    
-
     </style>
 
 
 </head>
 <body>
+    <div id="container">
+
+    
     <header>
 
         <div class="profile_pic">
@@ -109,12 +141,14 @@
         
         <p>Romanticizing programming and helping self taught developers</p>
         <div class="social-links">
-            <i class="fa-brands fa-amazon"></i>
-            <i class="fa-brands fa-github"></i>
-            <i class="fa-brands fa-hashnode"></i>
-            <i class="fa-brands fa-instagram"></i>
-            <i class="fa-brands fa-youtube"></i>
-            <i class="fa-regular fa-envelope"></i>
+            
+                <a href="#"><i class="fa-brands fa-amazon fa-2x"></i></a>
+                <a href="#"><i class="fa-brands fa-github fa-2x"></i></a>
+                <a href="#"><i class="fa-brands fa-hashnode fa-2x"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram fa-2x"></i></a>
+                <a href="#"><i class="fa-brands fa-youtube fa-2x"></i></a>
+                <a href="#"><i class="fa-regular fa-envelope fa-2x"></i></a>
+
         </div>
 
     </header>
@@ -127,34 +161,37 @@
                 <div class="link youtube">
                     <div class="caption">
                         <p>Watch My Newest Video!</p>
-                        <i class="fa-brands fa-youtube"></i>
+                        <a href="#"><i class="fa-brands fa-youtube"></i></a>
                     </div>
                 </div>
                 <div class="link amazon">
                     <div class="caption">
                         <p>Shop My Amazon Storefront</p>
-                        <i class="fa-brands fa-amazon"></i>
+                        <a href="#"></a><i class="fa-brands fa-amazon"></i></a>
                     </div>            
                 </div>
+              
+                    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/3ebHKSjHujS4Tyt2KKP97R?utm_source=generator"  width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+          
             </div>
            
             <div class="link-secondary">
                 <div class="link hashnode">
                     <div class="caption">
                         <p>Read My Blog</p>
-                        <i class="fa-duotone fa-browser"></i>
+                        <a href="#"><i class="fa-duotone fa-browser"></i></a>
                     </div>
                 </div>
                 <div class="link github">  
                     <div class="caption">
                         <p>Explore My Github</p>
-                        <i class="fa-brands fa-github-alt"></i>
+                        <a href="#"></a><i class="fa-brands fa-github-alt"></i></a>
                     </div>
                 </div>
                 <div class="link instagram">
                     <div class="caption">
                         <p>Join the Community!</p>
-                        <i class="fa-brands fa-instagram"></i>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
                     </div>
                 </div>    
             </div>
@@ -164,5 +201,6 @@
         </div>
 
     </main>
+</div>
 </body>
 </html>
