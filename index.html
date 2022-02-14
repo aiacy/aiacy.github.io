@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css?family=Fanwood+Text|Shrikhand" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Fanwood+Text|Shrikhand|Chivo:wght@700" rel="stylesheet">
     <link href="https://cdn-images.mailchimp.com/embedcode/slim-10_7_dtp.css" rel="stylesheet" type="text/css">
     <script src="https://kit.fontawesome.com/fd53d8f41f.js" crossorigin="anonymous"></script>
 
@@ -46,25 +46,28 @@
         }
 
         h2{
-            margin: 0rem;
+            margin: 0.5rem;
             Font-Family: 'Shrikhand', Serif;
             Font-Size: 24px;
             letter-spacing: .1rem;
             text-align: center;
+            color: #564D80;
 
         }
 
         p{
-            Font-Family: 'Fanwood Text', Serif;
-            Font-Size: 16px;
-            letter-spacing: .1rem;
-            line-height: 1rem;
+            Font-Family: 'Chivo', sans-serif;
+            Font-Size: 14px;
+            text-transform: lowercase;
         }
 
         header p {
+            Font-Family: 'Fanwood Text', Serif;
+            letter-spacing: 0.1rem;
             margin: 0;
-            width: 20vw;
+            width: 22vw;
             text-align: center;
+
         }
 
         .profile_pic img{
@@ -83,6 +86,10 @@
             color: white;
         }
 
+        .social-links a i:hover{
+            color: #C2F970;
+        }
+
         .link-container{
             display: grid;
             justify-items: center;
@@ -95,7 +102,15 @@
             height: 250px;
             border-radius: 1rem;
             display: grid;
+            border: 7px solid #fff;
         }
+
+        .link:hover{
+            box-shadow: 9px 15px 15px -12px rgba(0,0,0,0.1);
+            box-shadow: -9px -15px -15px -12px rgba(0,0,0,0.1);
+        }
+
+      
 
         .link-secondary .link{
 
@@ -105,12 +120,12 @@
         }
 
         .link-container .youtube{
-            background:linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(thumb.png);
+            background:linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3)), url(thumb.png);
             background-size: cover;
         }
 
         .link-container .amazon{
-            background:linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(me.JPG);
+            background:linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2)), url(me.JPG);
             background-size: contain;
         }
 
@@ -123,7 +138,7 @@
         }
 
         .link-container .instagram{
-            background-image: url(me.JPG);
+            background:linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3)), url(me.JPG);
             background-size: cover;
         }
 
@@ -145,12 +160,24 @@
             width: 35vw;
         }
 
+        .link-third{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-gap: 1rem 1rem;
+            width: 70%;
+        }
+
+        .link-third .link{
+            height: 2rem;
+        }
+
         .link-container .caption{
             display: grid;
             grid-template-columns: 3fr 1fr;
-            align-items: baseline;
+            align-items: center;
+            align-content: end;
             justify-content: space-between;
-            margin: 2rem; 
+            margin: 1.5rem; 
             
         }
 
@@ -180,6 +207,15 @@
             clear:left; 
             font:14px Helvetica, Arial,sans-serif; 
             width: 70%;
+        }
+
+        #mc_embed_signup .button{
+            background-color: #C2F970;
+            color: #000;
+        }
+
+        .fa-2x{
+            font-size: 1.5em;
         }
     </style>
 
@@ -216,13 +252,13 @@
             <div class="link-main">
                 <div class="link youtube">
                     <div class="caption">
-                        <p>Watch My Newest Video!</p>
+                        <p>🎥 Watch My Newest Video!</p>
                         <a href="#"><i class="fa-brands fa-youtube fa-2x"></i></a>
                     </div>
                 </div>
                 <div class="link amazon">
                     <div class="caption">
-                        <p>Shop My Amazon Storefront</p>
+                        <p>🛍 Shop My Amazon Storefront</p>
                         <a href="#"><i class="fa-brands fa-amazon fa-2x"></i></a>
                     </div>            
                 </div>
@@ -234,22 +270,27 @@
             <div class="link-secondary">
                 <div class="link hashnode">
                     <div class="caption">
-                        <p>Read My Blog</p>
+                        <p>🖥 Read My Blog</p>
                         <a href="#"><i class="fa-duotone fa-browser"></i></a>
                     </div>
                 </div>
                 <div class="link github">  
                     <div class="caption">
-                        <p>Explore My Github</p>
+                        <p>⭐️   Explore My Github</p>
                         <a href="#"><i class="fa-brands fa-github-alt"></i></a>
                     </div>
                 </div>
                 <div class="link instagram">
                     <div class="caption">
-                        <p>Join the Community!</p>
+                        <p>👾 Join the Community!</p>
                         <a href="#"><i class="fa-brands fa-instagram"></i></a>
                     </div>
-                </div>    
+                </div>   
+                <div class="link donate">
+                    <p>$5</p>
+                    <p>$10</p>
+                    <p>$20</p>
+                </div>
             </div>
 
             <div id="mc_embed_signup">
@@ -269,7 +310,48 @@
                 </form>
                 </div>
 
-<!--End mc_embed_signup-->
+            <!--End mc_embed_signup-->
+
+            <div class="link-third">
+                <div class="link hashnode">
+                    <div class="caption">
+                        <p>Read My Blog</p>
+                        <a href="#"><i class="fa-duotone fa-browser"></i></a>
+                    </div>
+                </div>
+                <div class="link hashnode">
+                    <div class="caption">
+                        <p>Read My Blog</p>
+                        <a href="#"><i class="fa-duotone fa-browser"></i></a>
+                    </div>
+                </div>
+                <div class="link hashnode">
+                    <div class="caption">
+                        <p>Read My Blog</p>
+                        <a href="#"><i class="fa-duotone fa-browser"></i></a>
+                    </div>
+                </div>
+                <div class="link hashnode">
+                    <div class="caption">
+                        <p>Read My Blog</p>
+                        <a href="#"><i class="fa-duotone fa-browser"></i></a>
+                    </div>
+                </div>
+                <div class="link hashnode">
+                    <div class="caption">
+                        <p>Read My Blog</p>
+                        <a href="#"><i class="fa-duotone fa-browser"></i></a>
+                    </div>
+                </div>
+                <div class="link hashnode">
+                    <div class="caption">
+                        <p>Read My Blog</p>
+                        <a href="#"><i class="fa-duotone fa-browser"></i></a>
+                    </div>
+                </div>
+
+
+            </div>
             
             <p>- Made with 💖 by Aliyah Regina. Feel free to use the <a href="https://github.com/aiacy/aiacy.github.io">code</a></p>
 
