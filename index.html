@@ -71,8 +71,12 @@
 
         }
 
-        .profile_pic img{
-            border-radius: 100%;
+        .profile_pic {
+            background: url(profile.JPG) no-repeat;
+            background-size: cover;
+            width: 8rem;
+            height: 8rem;
+            border-radius: 61%;
         }
 
         .social-links{
@@ -131,15 +135,17 @@
         }
 
         .link-container .hashnode{
-            background-image: url(https://loremflickr.com/640/360);
+            background:linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2)),  url(blog.JPG);
+            background-size: cover;
         }
 
         .link-container .github{
-            background-image: url(https://loremflickr.com/640/360);
+            background:linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2)),  url(github.JPG);
+            background-size: cover;
         }
 
         .link-container .instagram{
-            background:linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3)), url(me.JPG);
+            background:linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3)), url(instagram.jpg);
             background-size: cover;
         }
 
@@ -159,6 +165,13 @@
             grid-template-columns: 1fr 1fr;
             grid-gap: 1rem 1rem;
             width: 35vw;
+        }
+
+        
+
+        .link-secondary .link .caption{
+            display: grid;
+            grid-template-columns: 1fr;
         }
 
         .link-third{
@@ -181,6 +194,14 @@
             margin: 1.5rem; 
             
         }
+
+        .link-secondary .caption{
+            display: grid;
+            grid-template-columns: 1fr !important;
+  
+            
+        }
+
 
         .link-container .caption a {
             display: grid;
@@ -231,9 +252,7 @@
     
     <header>
 
-        <div class="profile_pic">
-            <img src="me.JPG" alt="">
-        </div>
+        <div class="profile_pic"></div>
 
         <h2>Am I A Coder Yet?</h2>
         
