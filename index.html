@@ -11,11 +11,15 @@
     <title>Am I A Coder Yet? | Aliyah Regina</title>
 
     <style>
-        body{
+        body, p, h2{
             margin: 0;
             padding: 0;
-            width: 100vw;
+           
+        }
+
+        body{ width: 100vw;
             background: #f0f0f0;
+            overflow-x: hidden;
         }
 
         #container{
@@ -114,6 +118,14 @@
             color: #C2F970;
         }
 
+
+        .caption{
+            display: flex;
+            align-items: end;
+            align-content: end;
+            justify-content: space-between;
+            margin: 1.5rem; 
+        }
       
 
 
@@ -137,6 +149,13 @@
             border-radius: 1rem;
 
         }
+        .link .spotify{
+            width: 380px;
+        }
+
+
+
+        /* Media Input */
 
         .youtube{
             background:linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3)), url(thumb.png);
@@ -161,10 +180,6 @@
          .instagram{
             background:linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3)), url(instagram.jpg);
             background-size: cover;
-        }
-
-        .link .spotify{
-            width: 380px;
         }
 
   
@@ -195,21 +210,11 @@
         }
 
 
-        .link-container .caption a {
-            display: grid;
-            justify-content: end;
+        .caption a {
             text-decoration: none;
             color: white;
         }
 
-        .caption{
-            display: grid;
-            grid-template-columns: 3fr 1fr;
-            align-items: center;
-            align-content: end;
-            justify-content: space-between;
-            margin: 1.5rem; 
-        }
 
         .caption p{
            color: white;
@@ -300,7 +305,7 @@
                 </div>
                 <div class="link amazon" onclick="window.open('https://www.amazon.ca/hz/wishlist/ls/7XEFPRODLWJT/ref=nav_wishlist_lists_2','mywindow');" style="cursor: pointer;">
                     <div class="caption">
-                        <p>Shop My Amazon Storefront 🛍 </p>
+                        <p>Shop My Amazon Store 🛍 </p>
                         <a href="#"><i class="fa-brands fa-amazon fa-2x"></i></a>
                     </div>            
                 </div>
