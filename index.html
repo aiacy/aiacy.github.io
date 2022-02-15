@@ -42,7 +42,7 @@
         }
 
         header h2{
-            font-size: 36px;
+            font-size: 2rem;
         }
 
         h2{
@@ -66,7 +66,7 @@
             Font-Family: 'Fanwood Text', Serif;
             letter-spacing: 0.1rem;
             margin: 0;
-            width: 22vw;
+            width: 15rem;
             text-align: center;
         }
 
@@ -79,7 +79,7 @@
         }
 
         .social-links{
-            margin: 2rem;
+            margin: 1rem;
         }
 
         .social-links a i{
@@ -247,6 +247,23 @@
             width: 100%;
             font-size: 14px;
         }
+
+
+        /* Media Queries*/
+        @media only screen and (max-width: 375px) {
+            #container {
+                width: 80vw;
+
+             }
+
+             header{
+                display: grid;
+                align-items: center;
+                grid-template-columns: 1fr;
+                width: 80vw;
+                justify-items: center;
+             }
+            }
     </style>
 
 
@@ -310,7 +327,7 @@
                 </div>
                 <div class="link instagram" onclick="window.open('https://www.instagram.com/amiacoderyet/','mywindow');" style="cursor: pointer;">
                     <div class="caption">
-                        <p>Join the Community! 👾 </p>
+                        <p>Find me on instagram 📸 </p>
 
                     </div>
                 </div>   
@@ -339,26 +356,31 @@
             <!--End mc_embed_signup-->
 
             <div class="link-third">
-                <div class="link hashnode">
+                <div class="link hashnode" onclick="window.open('https://discord.gg/Du6c8PaAZA', 'mywindow');" style="cursor: pointer;">
                     <div class="caption">
-                        <p>Read My Blog</p>
+                        <p>Join the discord 👾</p>
                         <a href="#"><i class="fa-duotone fa-browser"></i></a>
                     </div>
                 </div>
 
-                <!--
+              
+
+                <div class="link hashnode" onclick="window.open('https://pin.it/72Ccyiy', 'mywindow');"  style="cursor: pointer;">
+                    <div class="caption">
+                        <p>Find me on Pinterest</p>
+                        <a href="www.pinterest.com/amiacoderyet"><i class="fa-duotone fa-browser"></i></a>
+                    </div>
+                </div>
+
                 <div class="link hashnode">
                     <div class="caption">
-                        <p>Read My Blog</p>
+                        <p>My Amazon Wishlist</p>
                         <a href="#"><i class="fa-duotone fa-browser"></i></a>
                     </div>
                 </div>
-                <div class="link hashnode">
-                    <div class="caption">
-                        <p>Read My Blog</p>
-                        <a href="#"><i class="fa-duotone fa-browser"></i></a>
-                    </div>
-                </div>
+            </div>
+
+        <!--          
                 <div class="link hashnode">
                     <div class="caption">
                         <p>Read My Blog</p>
