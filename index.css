@@ -5,7 +5,8 @@
     }
 
     body{ width: 100vw;
-        background: #f0f0f0;
+        background: rgb(194,249,112);
+background: linear-gradient(11deg, rgba(194,249,112,1) 4%, rgba(152,166,212,1) 100%);
         overflow-x: hidden;
     }
 
