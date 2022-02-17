@@ -265,7 +265,11 @@
         }
 
         main{
-            width: auto;
+            width: 80%;
+            display: grid;
+            justify-content: center;
+            margin: auto;
+
         }
         
     }
