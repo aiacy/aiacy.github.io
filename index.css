@@ -4,27 +4,30 @@
        
     }
 
-    body{ width: 100vw;
+    body{ 
+        width: 100%;
         background: rgb(194,249,112);
-background: linear-gradient(11deg, rgba(194,249,112,1) 4%, rgba(152,166,212,1) 100%);
+        background: linear-gradient(11deg, rgba(194,249,112,1) 4%, rgba(152,166,212,1) 100%);
         overflow-x: hidden;
     }
 
     main{
+        margin: 1rem 4rem 2rem 4rem;
         width: inherit;
     }
 
+ 
     #container{
         background: white;
-        width: 50vw;
         display: grid;
         align-items: center;
         margin: auto;
-        margin-top: 1rem;
-        margin-bottom: 1rem;
+        margin: 1rem;
         border-radius: 2rem;
-        padding: 2rem;
+        padding: 1rem;
         box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+        width: auto;
+        justify-content: center;
     }
 
     header{
@@ -33,21 +36,22 @@ background: linear-gradient(11deg, rgba(194,249,112,1) 4%, rgba(152,166,212,1) 1
         justify-content: center;
         align-items: center;
         margin-top: 2rem;
+        width: fit-content;
+        margin: auto;
 
     }
 
     .link-main{
         display: grid;
         grid-template-columns: 1fr;
-        margin: 2rem;
+        margin: 1rem;
         margin-bottom: 0;
     }
 
     .link-secondary{
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-gap: 1rem 1rem;
-        margin: 2rem;
+        margin: 1rem;
         margin-top: 0;
     }
 
@@ -80,7 +84,7 @@ background: linear-gradient(11deg, rgba(194,249,112,1) 4%, rgba(152,166,212,1) 1
 
     main h2{
         font-size: 1.5rem;
-        margin: 3rem 0rem 2rem; 
+        margin: 3rem 0rem 1rem; 
     }
 
     /* Components */
@@ -242,9 +246,10 @@ background: linear-gradient(11deg, rgba(194,249,112,1) 4%, rgba(152,166,212,1) 1
     /* Media Queries*/
     @media only screen and (max-width: 450px) {
         #container {
-            width: 95vw;
+            margin: 2rem;
 
          }
+         
 
          header{
             display: grid;
@@ -252,4 +257,19 @@ background: linear-gradient(11deg, rgba(194,249,112,1) 4%, rgba(152,166,212,1) 1
             grid-template-columns: 1fr;
             justify-items: center;
          }
+    }
+
+    @media only screen and (min-width: 900px) {
+        #container{
+            margin: auto;
+            width: 50%;
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+            display: grid;
         }
+
+        main{
+            width: auto;
+        }
+        
+    }
