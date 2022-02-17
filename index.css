@@ -11,11 +11,6 @@
         overflow-x: hidden;
     }
 
-    main{
-        margin: 1rem 4rem 2rem 4rem;
-        width: inherit;
-    }
-
  
     #container{
         background: white;
@@ -46,6 +41,7 @@
         grid-template-columns: 1fr;
         margin: 1rem;
         margin-bottom: 0;
+        justify-content: center;
     }
 
     .link-secondary{
@@ -197,7 +193,6 @@
         
     }
 
-
     .caption a {
         text-decoration: none;
         color: white;
@@ -221,6 +216,10 @@
         margin: 2rem;
     }
 
+    #mc_embed_signup form{
+        padding: 0;
+    }
+
     #mc_embed_signup .button{
         background-color: #C2F970;
         color: #000;
@@ -238,18 +237,15 @@
     }
 
     footer{
-        width: 100%;
+        width: auto;
         font-size: 14px;
+        padding: 1rem;
+        margin: auto;
     }
 
 
     /* Media Queries*/
     @media only screen and (max-width: 450px) {
-        #container {
-            margin: 2rem;
-
-         }
-         
 
          header{
             display: grid;
