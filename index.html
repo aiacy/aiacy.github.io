@@ -6,387 +6,130 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Fanwood+Text|Shrikhand|Poppins:700" rel="stylesheet">
     <link href="https://cdn-images.mailchimp.com/embedcode/slim-10_7_dtp.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="index.css">
     <script src="https://kit.fontawesome.com/fd53d8f41f.js" crossorigin="anonymous"></script>
 
     <title>Am I A Coder Yet? | Aliyah Regina</title>
 
-    <style>
-        body, p, h2{
-            margin: 0;
-            padding: 0;
-           
-        }
-
-        body{ width: 100vw;
-            background: #f0f0f0;
-            overflow-x: hidden;
-        }
-
-        main{
-            width: inherit;
-        }
-
-        #container{
-            background: white;
-            width: 50vw;
-            display: grid;
-            align-items: center;
-            margin: auto;
-            margin-top: 1rem;
-            margin-bottom: 4rem;
-            border-radius: 2rem;
-            padding-bottom: 4rem;
-            box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
-        }
-
-        header{
-            display: flex;
-            flex-direction: column; 
-            justify-content: center;
-            align-items: center;
-            margin-top: 2rem;
-
-        }
-
-        .link-main{
-            display: grid;
-            grid-template-columns: 1fr;
-            padding: 1rem;
-        }
-
-        .link-secondary{
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            grid-gap: 1rem 1rem;
-            padding: 1rem;
-        }
-
-        .link-secondary .link{
-            border: 0;
-        }
-
-
-
-        /* Typography */
-
-        h2{
-            font-size: 2rem;
-            Font-Family: 'Shrikhand', Serif;
-            letter-spacing: .1rem;
-            text-align: center;
-            color: #564D80;
-            margin: 1rem;
-        }
-
-        p, #mc_embed_signup_scroll{
-            Font-Family: 'Poppins', sans-serif;
-            Font-Size: 14px;
-            text-transform: lowercase;
-
-        }
-
-        header p, footer {
-            Font-Family: 'Fanwood Text', Serif;
-            letter-spacing: 0.1rem;
-            margin: 0;
-            width: 15rem;
-            text-align: center;
-        }
-
-        main h2{
-            font-size: 1.5rem;
-        }
-
-        /* Components */
-
-        .profile_pic {
-            background: url(profile.JPG) no-repeat;
-            background-size: cover;
-            width: 8rem;
-            height: 8rem;
-            border-radius: 61%;
-        }
-
-        .social-links{
-            margin: 1rem;
-        }
-
-        .social-links a i{
-            background-color: black;
-            padding: .5rem;
-            border-radius: 100%;
-            text-decoration: none;
-            color: white;
-        }
-
-        .social-links a i:hover{
-            color: #C2F970;
-        }
-
-
-        .caption{
-            display: flex;
-            align-items: end;
-            align-content: end;
-            justify-content: space-between;
-            margin: 1.5rem; 
-        }
-      
-
-
-        .link{
-            height: 250px;
-            border-radius: 1rem;
-            display: grid;
-            border: 7px solid #fff;
-        }
-
-        .link:hover{
-            box-shadow: 9px 15px 15px -12px rgba(0,0,0,0.1);
-            box-shadow: -9px -15px -15px -12px rgba(0,0,0,0.1);
-        }
-
-    
-        .link .spotify{
-            width: 380px;
-        }
-
-
-
-        /* Media Input */
-
-        .youtube{
-            background:linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3)), url(thumb.png);
-            background-size: cover;
-        }
-
-        .amazon{
-            background:linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2)), url(me.JPG);
-            background-size: contain;
-        }
-
-        .hashnode{
-            background:linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2)),  url(blog.JPG);
-            background-size: cover;
-        }
-
-       .github{
-            background:linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2)),  url(github.JPG);
-            background-size: cover;
-        }
-
-         .instagram{
-            background:linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3)), url(instagram.jpg);
-            background-size: cover;
-        }
-
-  
-        
-
-        .link-secondary .link .caption{
-            display: grid;
-            grid-template-columns: 1fr;
-        }
-
-        .link-third{
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
-            grid-gap: 1rem 1rem;
-            width: 70%;
-        }
-
-        .link-third .link{
-            height: 10rem;
-        }
-
-
-        .link-secondary .caption{
-            display: grid;
-            grid-template-columns: 1fr !important;
-  
-            
-        }
-
-
-        .caption a {
-            text-decoration: none;
-            color: white;
-        }
-
-
-        .caption p{
-           color: white;
-        }
-
-        .profile_pic img{
-            background-size: contain;
-            width: 7rem;
-            height: 7rem;
-        }
-
-        #mc_embed_signup{
-            background:#fff; 
-            clear:left; 
-            font:14px Helvetica, Arial,sans-serif; 
-            margin: 1rem;
-        }
-
-        #mc_embed_signup .button{
-            background-color: #C2F970;
-            color: #000;
-            Font-Family: 'Poppins', sans-serif;
-            font-weight: bold;
-            text-transform: lowercase;
-        }
-
-        #mc_embed_signup img{
-            padding-top: .5rem;
-            padding-left: .4rem;
-        }
-
-        .fa-2x{
-            font-size: 1.5em;
-        }
-
-        footer{
-            width: 100%;
-            font-size: 14px;
-        }
-
-
-        /* Media Queries*/
-        @media only screen and (max-width: 450px) {
-            #container {
-                width: 95vw;
-
-             }
-
-             header{
-                display: grid;
-                align-items: center;
-                grid-template-columns: 1fr;
-                justify-items: center;
-             }
-            }
-    </style>
-
-
 </head>
+
 <body>
     <div id="container">
 
-    
     <header>
 
         <div class="profile_pic"></div>
-
         <h2>Am I A Coder Yet?</h2>
-        
         <p>✨ Romanticizing programming and helping self taught developers</p>
+
         <div class="social-links">
             
-                <a href="https://www.amazon.ca/hz/wishlist/ls/7XEFPRODLWJT/ref=nav_wishlist_lists_2"><i class="fa-brands fa-amazon fa-2x"></i></a>
-                <a href="https://github.com/aiacy"><i class="fa-brands fa-github fa-2x"></i></a>
-                <a href="https://pinterest.com/amiacoderyet"><i class="fa-brands fa-pinterest fa-2x"></i></a>
-                <a href="https://www.instagram.com/amiacoderyet/"><i class="fa-brands fa-instagram fa-2x"></i></a>
-                <a href="https://www.youtube.com/channel/UCNo8T__83Ze_Uxjk-epTzUA"><i class="fa-brands fa-youtube fa-2x"></i></a>
-                <a href="#mc_embed_signup"><i class="fa-regular fa-envelope fa-2x"></i></a>
-                
-        
+                <a target="_blank" href="https://www.amazon.ca/hz/wishlist/ls/7XEFPRODLWJT/ref=nav_wishlist_lists_2"><i class="fa-brands fa-amazon fa-2x"></i></a>
+                <a target="_blank" href="https://github.com/aiacy"><i class="fa-brands fa-github fa-2x"></i></a>
+                <a target="_blank" href="https://pinterest.com/amiacoderyet"><i class="fa-brands fa-pinterest fa-2x"></i></a>
+                <a target="_blank" href="https://www.instagram.com/amiacoderyet/"><i class="fa-brands fa-instagram fa-2x"></i></a>
+                <a target="_blank" href="https://www.youtube.com/channel/UCNo8T__83Ze_Uxjk-epTzUA"><i class="fa-brands fa-youtube fa-2x"></i></a>
+                <a target="_blank" href="#mc_embed_signup"><i class="fa-regular fa-envelope fa-2x"></i></a>
+                <a target="_blank" href="https://www.buymeacoffee.com/aliyahregina"><i class="fa-regular fa-gem fa-2x"></i></a>
+           
         </div>
 
-    </header>
+    </header> <!-- ./header -->
 
     <main>
-            <div class="link-main">
-                <div class="link youtube" onclick="window.open('https://www.youtube.com/channel/UCNo8T__83Ze_Uxjk-epTzUA','mywindow');" style="cursor: pointer;">
-                    <div class="caption">
-                        <p>Watch My Newest Video! 🎥</p>
-                        <a href="#"><i class="fa-brands fa-youtube fa-2x"></i></a>
-                    </div>
+
+        <div class="link-main">
+            
+            <div class="link youtube" onclick="window.open('https://www.youtube.com/channel/UCNo8T__83Ze_Uxjk-epTzUA','mywindow');" style="cursor: pointer;">            
+                <div class="caption">
+                    <p>Watch My Newest Video! 🎥</p>
+                    <a href="#"><i class="fa-brands fa-youtube fa-2x"></i></a>
                 </div>
-                <div class="link amazon" onclick="window.open('https://www.amazon.ca/hz/wishlist/ls/7XEFPRODLWJT/ref=nav_wishlist_lists_2','mywindow');" style="cursor: pointer;">
-                    <div class="caption">
-                        <p>Shop My Amazon Store 🛍 </p>
-                        <a href="#"><i class="fa-brands fa-amazon fa-2x"></i></a>
-                    </div>            
-                </div>
-                    <h2>🎧 My Favourite Tunes to Code to</h2>
-                    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/3ebHKSjHujS4Tyt2KKP97R?utm_source=generator"  width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+            </div>
+            
+            <div class="link amazon" onclick="window.open('https://www.amazon.ca/hz/wishlist/ls/7XEFPRODLWJT/ref=nav_wishlist_lists_2','mywindow');" style="cursor: pointer;">
+                <div class="caption">
+                    <p>Shop My Amazon Store 🛍 </p>
+                    <a href="#"><i class="fa-brands fa-amazon fa-2x"></i></a>
+                </div>            
+            </div>
+
+            <h2>🎧 My Favourite Tunes to Code to</h2>
+            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/3ebHKSjHujS4Tyt2KKP97R?utm_source=generator"  width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
           
-            </div>
+        </div><!-- ./link-main -->
            
-            <div class="link-secondary">
-                <div class="link hashnode" onclick="window.open('https://aiacy.hashnode.dev/','mywindow');" style="cursor: pointer;">
-                    <div class="caption">
-                        <p>Join The Discord 👾</p>
-
-                    </div>
+        <div class="link-secondary">
+            <div class="link hashnode" onclick="window.open('https://aiacy.hashnode.dev/','mywindow');" style="cursor: pointer;">
+                <div class="caption">
+                    <p>Join The Discord 👾</p>
                 </div>
-                <div class="link github" onclick="window.open('https://github.com/aiacy','mywindow');" style="cursor: pointer;">  
-                    <div class="caption">
-                        <p>Explore My Github ⭐️ </p>
-                        
-                    </div>
-                </div>
-                <div class="link instagram" onclick="window.open('https://www.instagram.com/amiacoderyet/','mywindow');" style="cursor: pointer;">
-                    <div class="caption">
-                        <p>Find me on instagram 📸 </p>
-
-                    </div>
-                </div>   
-                <div class="link donate">
-              
+            </div>
+            
+            <div class="link github" onclick="window.open('https://github.com/aiacy','mywindow');" style="cursor: pointer;">  
+                <div class="caption">
+                    <p>Explore My Github ⭐️ </p>        
                 </div>
             </div>
 
-            <div id="mc_embed_signup">
-                <form action="https://github.us14.list-manage.com/subscribe/post?u=21440b997b800b5d2df75a1f9&amp;id=72a30e9c91" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-                    <div id="mc_embed_signup_scroll">
+            <div class="link instagram" onclick="window.open('https://www.instagram.com/amiacoderyet/','mywindow');" style="cursor: pointer;">
+                <div class="caption">
+                    <p>Find me on instagram 📸 </p>
+                </div>
+            </div>   
+
+            <div class="link donate"></div>
+        
+        </div><!-- ./link-secondary -->
+
+        <div id="mc_embed_signup">
+            <form action="https://github.us14.list-manage.com/subscribe/post?u=21440b997b800b5d2df75a1f9&amp;id=72a30e9c91" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                <div id="mc_embed_signup_scroll">
                     <label for="mce-EMAIL">Join Our Community 💖</label>
                     <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
-                    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-                    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_21440b997b800b5d2df75a1f9_72a30e9c91" tabindex="-1" value=""></div>
-                        <div class="optionalParent">
-                            <div class="clear foot">
-                                <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
-                                <p class="brandingLogo"><a href="http://eepurl.com/hUAMd9" title="Mailchimp - email marketing made easy and fun"><img src="https://eep.io/mc-cdn-images/template_images/branding_logo_text_light_dtp.svg"></a></p>
-                            </div>
+                <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_21440b997b800b5d2df75a1f9_72a30e9c91" tabindex="-1" value=""></div>
+                    <div class="optionalParent">
+                        <div class="clear foot">
+                            <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
+                            <p class="brandingLogo"><a href="http://eepurl.com/hUAMd9" title="Mailchimp - email marketing made easy and fun"><img src="https://eep.io/mc-cdn-images/template_images/branding_logo_text_light_dtp.svg"></a></p>
                         </div>
                     </div>
-                </form>
                 </div>
+            </form>
+        </div><!--End mc_embed_signup-->
 
-            <!--End mc_embed_signup-->
-
-            <div class="link-third">
-               
-            </div>
+        <div class="link-third">
 
         <!--          
-                <div class="link hashnode">
-                    <div class="caption">
-                        <p>Read My Blog</p>
-                        <a href="#"><i class="fa-duotone fa-browser"></i></a>
-                    </div>
+            <div class="link hashnode">
+                <div class="caption">
+                    <p>Read My Blog</p>
+                    <a href="#"><i class="fa-duotone fa-browser"></i></a>
                 </div>
-                <div class="link hashnode">
-                    <div class="caption">
-                        <p>Read My Blog</p>
-                        <a href="#"><i class="fa-duotone fa-browser"></i></a>
-                    </div>
+            </div>
+                
+            <div class="link hashnode">
+                <div class="caption">
+                    <p>Read My Blog</p>
+                    <a href="#"><i class="fa-duotone fa-browser"></i></a>
                 </div>
-                <div class="link hashnode">
-                    <div class="caption">
-                        <p>Read My Blog</p>
-                        <a href="#"><i class="fa-duotone fa-browser"></i></a>
-                    </div>
+            </div>
+                
+            <div class="link hashnode">
+                <div class="caption">
+                    <p>Read My Blog</p>
+                    <a href="#"><i class="fa-duotone fa-browser"></i></a>
                 </div>
+            </div>
             -->
-
+        </div><!-- ./link-third -->
           
     </main>
-    <footer>- Made with 💖 by Aliyah Regina. Feel free to use the <a href="https://github.com/aiacy/aiacy.github.io">code</a></footer>
-</div>
+
+        <footer>- Made with 💖 by Aliyah Regina. Feel free to use the <a href="https://github.com/aiacy/aiacy.github.io">code</a></footer>
+
+    </div> <!-- ./container -->
+
 </body>
 </html>
