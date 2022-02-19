@@ -63,11 +63,11 @@
         margin-top: 1rem;
     }
 
-    p, #mc_embed_signup_scroll{
+    p, #mc_embed_signup_scroll, button{
         Font-Family: 'Poppins', sans-serif;
         Font-Size: 14px;
         text-transform: lowercase;
-
+        font-weight: 700;
     }
 
     header p, footer {
@@ -76,6 +76,17 @@
         margin: 0;
         width: 15rem;
         text-align: center;
+    }
+
+    .callout p{
+        font-weight: 300;
+        text-align: center;
+    }
+
+    .callout a{
+        font-weight: 700;
+        color: #000;
+        text-decoration: none;
     }
 
     main h2{
@@ -137,6 +148,11 @@
         width: -webkit-fill-available;
     }
 
+    button{
+        background-color: #C2F970;
+        border-radius: 3rem;
+        border: 0;
+    }
 
 
     /* Media Input */
@@ -241,6 +257,14 @@
         font-size: 14px;
         padding: 1rem;
         margin: auto;
+    }
+
+    .callout{
+        background-color: #D3FCD5;
+        border: 7px solid #fff;
+        padding: 1rem;
+        border-radius: 1rem;
+        margin-bottom: 1rem;
     }
 
 
