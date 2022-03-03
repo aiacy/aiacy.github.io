@@ -1,6 +1,6 @@
 A developer link landing page for your social media
 
-You can see my copy [here](aiacy.github.io) -> Still a work in progress
+You can see my copy [here](https://aiacy.github.io/) -> Still a work in progress
 
 I've been searching for a link based landing page for a little while and have come across some simple ones and wanted some pizzaz. Then one caught my eye, but required a minium of a certain amount of followers (read: clout) to have their special stamp of approval and gain access to their interface. So, I made my own. 
 
